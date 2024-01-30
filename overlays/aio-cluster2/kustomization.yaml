@@ -4,4 +4,6 @@ kind: Kustomization
 resources:
   - ../../base
 patches:
-  - ipaddresspool.yaml
+- path: ipaddresspool.yaml
+  target:
+    kind: IPAddressPool
